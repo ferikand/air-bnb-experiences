@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -81,4 +83,82 @@ h1 {
   font-size: 16px;
   line-height: 110%;
   color: #222222;
+}
+
+/* Cards */
+
+.cards {
+  padding-left: 37px;
+}
+
+.card {
+  width: 176px;
+  text-align: left;
+}
+
+.card--image {
+  background: url("./images/image\ 12.png") center;
+  background-size: cover;
+  width: 176px;
+  height: 235px;
+  border-radius: 9px;
+  padding: 6px 8px;
+  margin-bottom: 9px;
+}
+.card--image-status {
+  width: 61px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 110%;
+  text-align: center;
+  padding: 5px 6px;
+}
+.card--image-status p {
+  margin: 0;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+.rate,
+.place,
+.dot,
+.country,
+.description--text,
+.description--price,
+.persons {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
+}
+.dot {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #918e9b;
+}
+.place,
+.country {
+  color: #918e9b;
+}
+
+.rating .star-icon {
+  width: 14px;
+  height: 14px;
+  background: url("./images/icons/star.png") no-repeat center;
+  background-size: 80%;
+}
+
+.description--text {
+  margin-bottom: 8px;
+}
+
+.description--price {
+  font-weight: 600;
 }

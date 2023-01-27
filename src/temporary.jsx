@@ -1,6 +1,7 @@
 import "./App.css";
 import AppHeader from "./modules/AppHeader";
 import HeroSection from "./modules/HeroSection";
+import Cards from "./modules/Cards";
 
 function TempApp() {
   return (
@@ -8,6 +9,7 @@ function TempApp() {
       <div className="container">
         <AppHeader />
         <HeroSection />
+        <Cards />
       </div>
     </div>
   );
