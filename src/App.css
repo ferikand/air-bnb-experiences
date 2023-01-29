@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 .App {
   text-align: center;
   background: #f7efef;
@@ -86,24 +85,29 @@ h1 {
 }
 
 /* Cards */
-
 .cards {
   padding-left: 37px;
+  display: flex;
+  gap: 18px;
+  /* margin-top: 10px; */
 }
-
 .card {
   width: 176px;
   text-align: left;
 }
-
 .card--image {
-  background: url("./images/image\ 12.png") center;
+  /* background: url("./images/image\ 12.png") center; */
   background-size: cover;
   width: 176px;
   height: 235px;
   border-radius: 9px;
-  padding: 6px 8px;
+  /* padding: 6px 8px; */
   margin-bottom: 9px;
+  /* position: relative; */
+}
+.card--image > img {
+  max-width: 100%;
+  margin: 0;
 }
 .card--image-status {
   width: 61px;
@@ -115,6 +119,7 @@ h1 {
   line-height: 110%;
   text-align: center;
   padding: 5px 6px;
+  /* position: absolute; */
 }
 .card--image-status p {
   margin: 0;
@@ -147,18 +152,15 @@ h1 {
 .country {
   color: #918e9b;
 }
-
 .rating .star-icon {
   width: 14px;
   height: 14px;
   background: url("./images/icons/star.png") no-repeat center;
   background-size: 80%;
 }
-
 .description--text {
   margin-bottom: 8px;
 }
-
 .description--price {
   font-weight: 600;
 }
