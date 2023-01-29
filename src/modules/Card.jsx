@@ -1,19 +1,30 @@
 export default function Card(props) {
   // console.log(props);
+  let bageText;
+  if (props.openSpots === 0) {
+    bageText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    bageText = "ONLINE";
+  } else {
+    bageText = "Open spots: " + props.openSpots;
+  }
+
   return (
     <div className="card">
       <div className="card--image">
-        <img src={props.img} alt="" />
-        {/* <div className="card--image-status">
-          <p>SOLD OUT</p>
-        </div> */}
+        <img src={`./imagess/${props.coverImg}`} alt="" />
+        {bageText && (
+          <div className="card--image-status">
+            <p>{bageText}</p>
+          </div>
+        )}
       </div>
       <div className="card--description">
         <div className="rating">
           <div className="star-icon"> </div>
           <p className="rate">
-            {props.rating}
-            <span className="place"> ({props.reviewCount})</span>
+            {props.stats.rating}
+            <span className="place"> ({props.stats.reviewCount})</span>
           </p>
           <div className="dot"></div>
           <p className="country">{props.country}</p>
